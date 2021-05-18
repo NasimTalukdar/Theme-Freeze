@@ -1,0 +1,889 @@
+/* Common css start */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.heading h3 {
+  font-size: 40px;
+  position: relative;
+  padding-top: 50px;
+}
+.heading h3::after {
+  content: "";
+  width: 150px;
+  height: 3px;
+  background: #F72B1C;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: smoth linear .9s;
+}
+.heading h3::before {
+  content: "";
+  width: 150px;
+  height: 3px;
+  background: #F72B1C;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: smoth linear .9s;
+}
+.heading h3 span {
+  color: #F72B1C;
+}
+
+.fullwidth {
+  background: #111111;
+}
+
+.fixed_menu ul {
+  background: #F72B1C;
+  padding: 80px 20px 60px 20px !important;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99999;
+}
+.fixed_menu ul li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #111111;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.fixed_menu ul li a:hover {
+  background: #FFFFFF;
+  transform: scale(1.3);
+  margin-bottom: 40px;
+}
+.fixed_menu ul li a:hover i {
+  color: #F72B1C;
+}
+.fixed_menu ul li a:hover span {
+  opacity: 1;
+}
+.fixed_menu ul li a i {
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 50px;
+}
+.fixed_menu ul li a span {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: capitalize !important;
+  font-size: 17px !important;
+  opacity: 0;
+}
+.fixed_menu ul .active {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #111111;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+  background: #FFFFFF;
+  transform: scale(1.3);
+  margin-bottom: 40px !important;
+}
+.fixed_menu ul .active i {
+  color: #F72B1C;
+  font-size: 20px;
+  line-height: 50px;
+}
+.fixed_menu ul .active span {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: capitalize !important;
+  font-size: 17px !important;
+  opacity: 1;
+}
+
+/* Common css end */
+/* Custom animation css*/
+@keyframes smoth {
+  0% {
+    width: 0px;
+  }
+  25% {
+    width: 37.5px;
+  }
+  50% {
+    width: 75px;
+  }
+  75% {
+    width: 100px;
+  }
+  100% {
+    width: 150px;
+  }
+}
+@keyframes smoth2 {
+  0% {
+    width: 0px;
+  }
+  25% {
+    width: 15px;
+  }
+  50% {
+    width: 30px;
+  }
+  75% {
+    width: 45px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+/* Custom animation css*/
+.heading h3, #Home_page .fullwidth .profile .profile_details h1, #Home_page .fullwidth .profile .profile_details h4, #Home_page .fullwidth .profile_about h2, #Home_page .fullwidth .profile_about h3, #about .fullwidth .profile_about h2, #about .fullwidth .profile_about h3, #about .fullwidth .personal_info h4, #my_skill .skill_item .skill .circlechart .circle-chart .circle-chart__info .circle-chart__percent, #service .fullwidth .my_service h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+#Home_page .fullwidth .profile_about p, #about .fullwidth .profile_about p, #about .fullwidth .personal_info ul li, #about .fullwidth .main_info .info_box p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.fixed_menu ul li a span, .fixed_menu ul .active span, #Home_page .fullwidth .profile_about h2 span, #Home_page .fullwidth .profile_about a, .text-load, #about .fullwidth .profile_about h2 span, #about .fullwidth .profile_about a, #about .fullwidth .main_info .info_box h4, #my_skill .skill_item .skill .circlechart .circle-chart .circle-chart__info .circle-chart__subline, #contact .fullwidth .footer_content .contact_box h5, #contact .fullwidth .footer_content .block-title, #contact .fullwidth .footer_content form .form-group label, #contact .fullwidth .footer_content form .form-group input, #contact .fullwidth .footer_content form a, #contact .fullwidth .footer_content .msg .form-group .msglebel {
+  font-family: "Kaushan Script", cursive;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Home start */
+#Home_page {
+  background: #111111;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#Home_page .fullwidth {
+  background: #111111;
+}
+#Home_page .fullwidth .profile {
+  background: #111111;
+  padding: 50px 0px;
+}
+#Home_page .fullwidth .profile .profile_img {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+#Home_page .fullwidth .profile .profile_img::after {
+  position: absolute;
+  opacity: .3;
+  top: 6%;
+  left: 11%;
+  border-radius: 300px;
+  content: '';
+  height: calc(100% + 0px);
+  width: calc(100% + 0px);
+  background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+  -webkit-background-size: 6px 6px;
+  -moz-background-size: 6px 6px;
+  background-size: 6px 6px;
+  z-index: -1;
+}
+#Home_page .fullwidth .profile .profile_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#Home_page .fullwidth .profile .profile_details h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 30px !important;
+  margin-bottom: 10px !important;
+}
+#Home_page .fullwidth .profile .profile_details h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px !important;
+  letter-spacing: 5px;
+}
+#Home_page .fullwidth .profile .profile_social ul {
+  display: flex;
+  justify-content: center;
+}
+#Home_page .fullwidth .profile .profile_social ul li {
+  width: 40px;
+  height: 40px;
+  background: #F72B1C;
+  margin-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#Home_page .fullwidth .profile .profile_social ul li:hover {
+  background: #FFFFFF;
+}
+#Home_page .fullwidth .profile .profile_social ul li:hover i {
+  color: #111111;
+}
+#Home_page .fullwidth .profile .profile_social ul li a {
+  color: #FFFFFF;
+}
+#Home_page .fullwidth .profile .profile_social ul li a i {
+  line-height: 40px;
+  font-size: 17px;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#Home_page .fullwidth .profile_about {
+  background: #111111;
+  padding: 50px 0px;
+  padding-left: 80px;
+}
+#Home_page .fullwidth .profile_about h2 {
+  color: #F72B1C;
+  font-size: 50px;
+  position: relative;
+  margin-bottom: 25px !important;
+  margin-top: 30px !important;
+}
+#Home_page .fullwidth .profile_about h2::after {
+  content: "";
+  width: 45px;
+  height: 5px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  transform: translateX(50%);
+  left: -80px;
+}
+#Home_page .fullwidth .profile_about h2 span {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#Home_page .fullwidth .profile_about h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 35px !important;
+}
+#Home_page .fullwidth .profile_about h3 span {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #F72B1C;
+}
+#Home_page .fullwidth .profile_about p {
+  line-height: 25px;
+  margin-bottom: 40px !important;
+}
+#Home_page .fullwidth .profile_about p span {
+  color: #F72B1C;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+#Home_page .fullwidth .profile_about a {
+  display: inline-block;
+  color: #FFFFFF;
+  border: 1px solid #F72B1C;
+  line-height: 50px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#Home_page .fullwidth .profile_about a:hover {
+  background: #F72B1C;
+  color: #111111;
+}
+
+/* Home ends */
+/* Preloader start */
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+  background-color: #111111;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-load {
+  position: absolute;
+  bottom: -5px;
+  left: -70px;
+  color: #FFFFFF;
+}
+
+.loader {
+  width: 80px;
+  height: 67px;
+  margin: auto;
+  position: relative;
+}
+
+.loader .square {
+  background: #F72B1C;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 4px;
+  animation-fill-mode: both;
+  animation: motion 2.5s infinite cubic-bezier(0.89, 0.03, 0.06, 1.5);
+}
+
+.loader .path {
+  height: 10px;
+  width: 110px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.loader .path > div {
+  background: #F72B1C;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin: 0 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-fill-mode: both;
+  animation: dynamic 5s infinite cubic-bezier(0.89, 0.03, 0.06, 1.5);
+}
+
+.loader .path > div:nth-child(1) {
+  left: 40px;
+}
+
+.loader .path > div:nth-child(2) {
+  left: 80px;
+}
+
+.loader .path > div:nth-child(3) {
+  left: 120px;
+}
+
+.loader .path > div:nth-child(4) {
+  left: 160px;
+}
+
+.loader .path > div:nth-child(5) {
+  left: 200px;
+}
+
+.loader .path > div:nth-child(6) {
+  left: 240px;
+}
+
+.loader .path > div:nth-child(7) {
+  left: 280px;
+}
+
+@keyframes motion {
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes dynamic {
+  0% {
+    transform: translateX(-40px);
+  }
+  25% {
+    transform: translateX(-80px);
+  }
+  50% {
+    transform: translateX(-120px);
+  }
+  75% {
+    transform: translateX(-160px);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+/* Preloader ends */
+/* Navbar Start*/
+.fixed_menu ul li {
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+.fixed_menu ul li a {
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+.fixed_menu ul li a i {
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+.fixed_menu ul li a span {
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+
+/* Navbar ends*/
+/* About start */
+#about {
+  background: #111111;
+  width: 100%;
+}
+#about .fullwidth .profile_about {
+  background: #111111;
+  padding: 50px 0px;
+}
+#about .fullwidth .profile_about h2 {
+  color: #F72B1C;
+  font-size: 50px;
+  position: relative;
+  margin-left: 60px !important;
+  margin-bottom: 15px !important;
+}
+#about .fullwidth .profile_about h2::after {
+  content: "";
+  width: 45px;
+  height: 5px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  transform: translateX(50%);
+  left: -80px;
+}
+#about .fullwidth .profile_about h2 span {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#about .fullwidth .profile_about h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 35px !important;
+}
+#about .fullwidth .profile_about h3 span {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #F72B1C;
+}
+#about .fullwidth .profile_about p {
+  line-height: 25px;
+  margin-bottom: 40px !important;
+}
+#about .fullwidth .profile_about p span {
+  color: #F72B1C;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+#about .fullwidth .profile_about a {
+  display: inline-block;
+  color: #FFFFFF;
+  border: 1px solid #F72B1C;
+  line-height: 50px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#about .fullwidth .profile_about a:hover {
+  background: #F72B1C;
+  color: #111111;
+}
+#about .fullwidth .personal_info h4 {
+  font-size: 20px;
+  margin-bottom: 30px !important;
+  color: #F72B1C;
+  position: relative;
+}
+#about .fullwidth .personal_info h4::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 79px;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 15%;
+  background: #FFFFFF;
+}
+#about .fullwidth .personal_info ul {
+  float: left;
+  margin-left: 50px;
+}
+#about .fullwidth .personal_info ul:first-of-type {
+  margin-left: 0;
+}
+#about .fullwidth .personal_info ul li {
+  text-transform: capitalize;
+  font-size: 17px;
+  margin-bottom: 22px;
+}
+#about .fullwidth .personal_info ul li span {
+  text-transform: capitalize;
+  color: #F72B1C;
+}
+#about .fullwidth .personal_info ul .ttn {
+  text-transform: none;
+}
+#about .fullwidth .main_info .info_box {
+  border: 1px solid #FFFFFF;
+  margin-bottom: 10px;
+  padding: 0px;
+  transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+  background: #F72B1C;
+}
+#about .fullwidth .main_info .info_box:hover {
+  transform: scale(1.1);
+}
+#about .fullwidth .main_info .info_box:hover p::after {
+  animation: smoth2 linear .9s;
+}
+#about .fullwidth .main_info .info_box h4 {
+  font-size: 45px;
+  color: #FFFFFF;
+}
+#about .fullwidth .main_info .info_box p {
+  text-transform: uppercase;
+  margin-left: 75px !important;
+  position: relative;
+}
+#about .fullwidth .main_info .info_box p::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -68px;
+  width: 60px;
+  height: 3px;
+  background: #FFFFFF;
+}
+
+/* About end */
+/* My skill start */
+#my_skill {
+  background: #111111;
+  padding-top: 90px;
+}
+#my_skill .skill_item {
+  margin-top: 90px;
+}
+#my_skill .skill_item .skill .circlechart .circle-chart {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 50px;
+  transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+}
+#my_skill .skill_item .skill .circlechart .circle-chart:hover {
+  transform: scale(1.4);
+}
+#my_skill .skill_item .skill .circlechart .circle-chart .circle-chart__circle {
+  stroke: #F72B1C;
+  fill: #FFFFFF;
+}
+#my_skill .skill_item .skill .circlechart .circle-chart .circle-chart__info .circle-chart__percent {
+  font-size: 7px;
+}
+#my_skill .skill_item .skill .circlechart .circle-chart .circle-chart__info .circle-chart__subline {
+  font-size: 3px;
+}
+
+/* My skill end */
+/*service start */
+#service {
+  background: #111111;
+  padding-bottom: 90px;
+}
+#service .fullwidth .my_service {
+  margin-top: 90px;
+  border: 1px solid #F72B1C;
+  background: #FFFFFF;
+  padding: 50px 0px;
+  transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+}
+#service .fullwidth .my_service:hover {
+  background: none;
+}
+#service .fullwidth .my_service:hover i {
+  color: #FFFFFF;
+}
+#service .fullwidth .my_service:hover h5 {
+  color: #FFFFFF;
+}
+#service .fullwidth .my_service i {
+  color: #F72B1C;
+  font-size: 35px;
+  transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+}
+#service .fullwidth .my_service h5 {
+  font-size: 35px;
+  transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+  color: #F72B1C;
+}
+
+/* service end */
+/* Portfolio start */
+#portfolio {
+  background: #111111;
+}
+#portfolio .fullwidth .work_row2 {
+  padding-bottom: 90px;
+}
+#portfolio .fullwidth .work {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 90px;
+  transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+}
+#portfolio .fullwidth .work:hover {
+  transform: scale(1.1);
+}
+#portfolio .fullwidth .work:hover .work_overlay {
+  left: 0;
+}
+#portfolio .fullwidth .work img {
+  width: 100%;
+  height: 100%;
+}
+#portfolio .fullwidth .work .work_overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+}
+#portfolio .fullwidth .work .work_overlay i {
+  font-size: 30px;
+  color: #FFFFFF;
+  padding: 20px;
+  background: #F72B1C;
+  border-radius: 50%;
+  margin-top: 120px;
+  border: 3px solid #111111;
+  transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+}
+#portfolio .fullwidth .work .work_overlay i:hover {
+  background: #FFFFFF;
+  color: #F72B1C;
+  border-color: #F72B1C;
+}
+
+/* Portfolio end */
+/* contact start */
+#contact {
+  background: #111111;
+  padding-bottom: 50px;
+  padding-top: 0 !important;
+}
+#contact .fullwidth .footer_content {
+  padding-top: 80px;
+}
+#contact .fullwidth .footer_content .contact_box {
+  background: #F72B1C;
+  padding: 30px 0px;
+  margin-bottom: 20px;
+}
+#contact .fullwidth .footer_content .contact_box i {
+  color: #111111;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#contact .fullwidth .footer_content .contact_box h5 {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+#contact .fullwidth .footer_content .block-title {
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+#contact .fullwidth .footer_content .block-title span {
+  color: #F72B1C;
+}
+#contact .fullwidth .footer_content form .form-group label {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 17px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+#contact .fullwidth .footer_content form .form-group input {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border: none;
+}
+#contact .fullwidth .footer_content form a {
+  display: inline-block;
+  color: #FFFFFF;
+  border: 1px solid #F72B1C;
+  line-height: 50px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  margin-top: 40px;
+}
+#contact .fullwidth .footer_content form a:hover {
+  background: #F72B1C;
+  color: #111111;
+}
+#contact .fullwidth .footer_content .msg {
+  margin-top: 78px !important;
+}
+#contact .fullwidth .footer_content .msg .form-group .msglebel {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 17px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+/* contact end */
+/* copy start */
+#copy {
+  background: #111111;
+  padding-top: 20px;
+  border-top: 1px solid #F72B1C;
+}
+#copy .profile_social ul {
+  display: flex;
+}
+#copy .profile_social ul li {
+  width: 40px;
+  height: 40px;
+  background: #F72B1C;
+  margin-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+}
+#copy .profile_social ul li:hover {
+  background: #FFFFFF;
+}
+#copy .profile_social ul li:hover i {
+  color: #111111;
+}
+#copy .profile_social ul li a {
+  color: #FFFFFF;
+}
+#copy .profile_social ul li a i {
+  line-height: 40px;
+  font-size: 17px;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#copy .copy-right a {
+  color: #F72B1C;
+}
+
+/* copy end */
